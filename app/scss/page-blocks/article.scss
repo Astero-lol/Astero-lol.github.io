@@ -5,8 +5,10 @@
   counter-reset: section;
 
   &__heading {
-    margin-bottom: 60px;
     text-align: center;
+
+    max-width: 600px;
+    margin: 0 auto 60px;
   }
 
   &__content {
