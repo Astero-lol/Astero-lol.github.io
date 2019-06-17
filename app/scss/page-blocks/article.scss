@@ -1,0 +1,78 @@
+@import "../vars";
+
+.article {
+  padding-top: 20px;
+  counter-reset: section;
+
+  &__heading {
+    margin-bottom: 60px;
+    text-align: center;
+  }
+
+  &__content {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  &__image {
+    margin-bottom: 80px;
+  }
+
+  &__description {
+    display: flex;
+    padding-top: 30px;
+    margin-bottom: 70px;
+    border-top: 1px solid $border-color;
+
+    font-size: 16px;
+  }
+
+  &__description-cell {
+    width: 50%;
+    padding-right: 120px;
+  }
+
+  &__label {
+    opacity: $opacity;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    margin-bottom: 80px;
+
+    & p {
+      margin-bottom: 20px;
+    }
+
+    & p:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__number-list {
+    margin-bottom: 80px;
+
+    .article__number-item:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  &__other-works {
+    padding: 60px 0;
+    background-color: #FBFBFC;
+  }
+
+  &__number-item {
+    margin-bottom: 15px;
+
+    &:before {
+      color: $orange;
+      counter-increment: section;
+      content: counter(section) ". ";
+    }
+  }
+}
