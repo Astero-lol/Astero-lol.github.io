@@ -16,4 +16,8 @@
     font-size: 14px;
     font-weight: $bold;
   }
+
+  &__description {
+    max-width: 400px;
+  }
 }
