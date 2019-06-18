@@ -1,1 +1,1 @@
-.logo{position:relative;z-index:5;width:122px;height:45px;background-image:url(../img/common/logo.svg);-webkit-background-size:cover;background-size:cover}@media (max-width:767px){.logo{width:84px;height:30px}}
+.logo{position:relative;z-index:5;width:125px;height:45px;background-image:url(../img/common/logo.svg);-webkit-background-size:contain;background-size:contain}@media (max-width:767px){.logo{width:84px;height:30px}}

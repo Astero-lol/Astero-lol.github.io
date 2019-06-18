@@ -1,0 +1,96 @@
+@import "../vars";
+
+.juventas {
+  padding-top: 45px;
+
+  &__heading-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    margin-bottom: 80px;
+  }
+
+  &__image {
+    margin-bottom: 80px;
+  }
+
+  &__content {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  &__heading {
+    max-width: 600px;
+  }
+
+  &__subheading {
+    max-width: 450px;
+  }
+
+  &__text {
+    font-size: 16px;
+    margin-bottom: 80px;
+
+    & p {
+      margin-bottom: 15px;
+    }
+
+    & p:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  &__image-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+  }
+
+  &__title {
+    max-width: 780px;
+    margin-bottom: 40px;
+  }
+}
+
+.project-design {
+  padding-bottom: 60px;
+  margin-bottom: 60px;
+  border-bottom: 1px solid $border-color;
+
+  &__text {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+
+    font-size: 16px;
+
+    & p {
+      width: calc(50% - 25px);
+    }
+  }
+}
+
+.info-block {
+  font-size: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  &__block {
+    width: calc(50% - 25px);
+  }
+
+  &__title {
+    margin-bottom: 10px;
+  }
+
+  &__item {
+    margin-bottom: 5px;
+    max-width: 350px;
+  }
+}
+
+.terms {
+  margin-bottom: 80px;
+}
