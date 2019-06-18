@@ -1,22 +1,11 @@
 @import 'vars';
 
 @font-face {
-	font-family: 'ArialMT';
-	src: url('../fonts/ArialMT.eot'); /* IE9 Compat Modes */
-	src: url('../fonts/ArialMT.eot?#iefix') format('embedded-opentype'); /* IE6-IE8 */
-	src: url('../fonts/ArialMT.woff2') format('woff2'); /* Super Modern Browsers */
-	src: url('../fonts/ArialMT.woff') format('woff'); /* Pretty Modern Browsers */
-	src: url('../fonts/ArialMT.ttf')  format('truetype'); /* Safari, Android, iOS */
-	src: url('../fonts/ArialMT.svg') format('svg'); /* Legacy iOS */
-}
-
-@font-face {
-	font-family: 'Arial-BoldMT';
-	src: url('../fonts/Arial-BoldMT.eot'); /* IE9 Compat Modes */
-	src: url('../fonts/Arial-BoldMT.eot?#iefix') format('embedded-opentype'); /* IE6-IE8 */
-	src: url('../fonts/Arial-BoldMT.woff2') format('woff2'); /* Super Modern Browsers */
-	src: url('../fonts/Arial-BoldMT.woff') format('woff'); /* Pretty Modern Browsers */
-	src: url('../fonts/Arial-BoldMT.ttf')  format('truetype'); /* Safari, Android, iOS */
-	src: url('../fonts/Arial-BoldMT.svg') format('svg'); /* Legacy iOS */
-	font-weight: $bold;
+	font-family: 'CenturyGothic';
+	src: url('../fonts/CenturyGothic-Bold.eot'); /* IE9 Compat Modes */
+	src: url('../fonts/CenturyGothic-Bold.eot?#iefix') format('embedded-opentype'); /* IE6-IE8 */
+	src: url('../fonts/CenturyGothic-Bold.woff2') format('woff2'); /* Super Modern Browsers */
+	src: url('../fonts/CenturyGothic-Bold.woff') format('woff'); /* Pretty Modern Browsers */
+	src: url('../fonts/CenturyGothic-Bold.ttf')  format('truetype'); /* Safari, Android, iOS */
+	src: url('../fonts/CenturyGothic-Bold.svg') format('svg'); /* Legacy iOS */
 }
