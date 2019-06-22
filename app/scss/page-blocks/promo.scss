@@ -47,10 +47,29 @@
   }
 
   &__media {
-    flex: 1 1 570px;
+    position: absolute;
+    width: 650px;
+    min-width: 650px;
+    margin-left: -130px;
+
+    opacity: 0;
+    transition: opacity $duration;
+
+    @media #{$tablet-width} {
+      margin-left: 0;
+      width: 40%;
+      min-width: 40%;
+    }
+
+    &_active {
+      position: relative;
+      opacity: 1;
+    }
 
     @media #{$phone-width} {
       display: block;
+      width: 100%;
+      min-width: initial;
       flex: initial;
     }
   }
@@ -59,17 +78,20 @@
     display: flex;
     flex-direction: column;
 
-    flex: 1 1 100%;
     max-width: 670px;
     margin-left: 30px;
     padding-bottom: 55px;
 
     @media #{$tablet-width} {
       padding-bottom: 0;
+      width: 60%;
     }
 
     @media #{$phone-width} {
       display: block;
+      width: 100%;
+      min-width: 100%;
+
       margin: 0 0 15px;
       padding: 0;
     }
@@ -90,19 +112,21 @@
 
   &__link {
     display: block;
-    margin-top: 25px;
+    margin: 25px 0 30px;
     font-size: 16px;
 
-    @media #{$phone-width} {
+    @media #{$tablet-width} {
       display: none;
     }
   }
 
   &__content-wrapper {
     flex: 1;
+    padding-top: 100px;
 
     @media #{$tablet-width} {
       flex: initial;
+      padding-top: 40px;
     }
   }
 }
