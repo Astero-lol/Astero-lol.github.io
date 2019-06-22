@@ -64,10 +64,18 @@
 
       border-bottom: 2px solid $border-color;
     }
+
+    @media #{$phone-width} {
+      justify-content: space-between;
+    }
   }
 
   &__results-block {
     width: 50%;
+
+    @media #{$phone-width} {
+      width: calc(50% - 5px);
+    }
   }
 
   &__result-label {
@@ -96,6 +104,15 @@
   &__result-text {
     max-width: 200px;
     font-size: 16px;
+
+    @media #{$tablet-width} {
+      font-size: 14px;
+      max-width: 170px;
+    }
+
+    @media #{$phone-width} {
+      font-size: 12px;
+    }
   }
 
   &__text {

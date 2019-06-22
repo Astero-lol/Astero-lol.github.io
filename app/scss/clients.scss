@@ -1,10 +1,16 @@
-@import "vars";
+@import "./vars";
+@import "./media";
 
 .clients {
 
   &__heading {
     max-width: 700px;
     margin-bottom: 60px;
+
+    @media #{$tablet-width} {
+      max-width: 400px;
+      margin-bottom: 40px;
+    }
   }
 
   &__list-wrapper {
@@ -12,6 +18,15 @@
     flex-wrap: wrap;
 
     margin: 0 -30px -30px 0;
+
+    @media #{$tablet-width} {
+      margin: 0 -1vw -1vw 0;
+    }
+
+    @media #{$phone-width} {
+      margin: 0;
+      justify-content: space-between;
+    }
   }
 
   &__item {
@@ -20,6 +35,18 @@
     margin: 0 30px 30px 0;
 
     background-size: cover;
+
+    @media #{$tablet-width} {
+      width: calc((100vw - calc(#{$tablet-gap} * 2) - 3vw) / 4);
+      height: calc((100vw - calc(#{$tablet-gap} * 2) - 3vw) / 4);
+      margin: 0 1vw 1vw 0;
+    }
+
+    @media #{$phone-width} {
+      width: calc((100vw - calc(#{$phone-gap} * 2) - 10px) / 2);
+      height: calc((100vw - calc(#{$phone-gap} * 2) - 10px) / 2);
+      margin: 0 0 10px;
+    }
   }
 }
 
