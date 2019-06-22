@@ -18,6 +18,7 @@
         }
         &_l {
             font-size: 45px;
+            line-height: 1.2;
 
             @media #{$tablet-width} {
                 font-size: 25px;
