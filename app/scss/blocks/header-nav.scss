@@ -12,10 +12,6 @@ $icon-line-height: 3px;
     margin-right: 32px;
     list-style-type: none;
 
-    &:nth-child(4) {
-      display: none;
-    }
-
     @media #{$phone-width} {
       margin: 0 0 20px;
       text-align: center;

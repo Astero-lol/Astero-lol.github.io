@@ -15,6 +15,14 @@
         }
         &_m {
             font-size: 32px;
+
+            @media #{$tablet-width} {
+                font-size: 26px;
+            }
+
+            @media #{$phone-width} {
+                font-size: 22px;
+            }
         }
         &_l {
             font-size: 45px;

@@ -21,11 +21,7 @@
   &__item {
     list-style-type: none;
 
-    &:nth-child(4) {
-      display: none;
-    }
-
-    @media #{$tablet-width} {
+    @media #{$phone-width} {
       margin-bottom: 15px;
     }
   }
