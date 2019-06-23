@@ -7,11 +7,16 @@
   &__section {
     display: flex;
     justify-content: space-between;
-    max-width: 1360px;
+    width: calc(100vw - 80px);
+    max-width: 1600px;
     margin-bottom: 0;
 
     @media (max-width: 1400px) {
       max-width: $content-width;
+    }
+
+    @media #{$tablet-width} {
+      width: auto;
     }
   }
 }
