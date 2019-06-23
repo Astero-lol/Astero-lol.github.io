@@ -48,6 +48,10 @@
     margin-bottom: 55px;
     border-top: 3px solid $border-color;
 
+    & .mission__results-row:last-of-type {
+      border-bottom: initial;
+    }
+
     @media #{$tablet-width} {
       margin-bottom: 30px;
       border-top: 2px solid $border-color;
@@ -121,5 +125,9 @@
     @media #{$tablet-width} {
       font-size: 18px;
     }
+  }
+
+  &__lion {
+    max-width: 250px;
   }
 }
