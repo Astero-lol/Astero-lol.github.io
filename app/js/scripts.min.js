@@ -20,9 +20,9 @@
 
             setTimeout(() => {
                 $animatedPromo.remove();
-                $app.classList.add('app_show')
+                $app.classList.add('app_show');
                 sessionStorage.setItem('animated', '1');
-            }, 2250)
+            }, 2050)
         } else {
             $animatedPromo.remove();
             $app.classList.add('app_show-without-animate')

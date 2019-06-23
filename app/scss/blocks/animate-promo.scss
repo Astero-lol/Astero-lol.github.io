@@ -31,13 +31,13 @@
   }
 
   &__circle-item_inside {
-    animation: hideshow 1.3s;
-    animation-delay: 1.5s;
+    //animation: hideshow .3s;
+    animation-delay: 2s;
   }
 
   &__circle-item_outside {
-    animation: hideshow 1.5s;
-    animation-delay: 1.5s;
+    //animation: hideshow .5s;
+    animation-delay: 2s;
   }
 
   &__titles {
