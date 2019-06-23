@@ -1,37 +1,121 @@
 @import "../vars";
+@import "../media";
 
 .animate-promo {
-  &__circle {
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    width: 44px;
-    height: 44px;
-
-    z-index: 10;
-
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-name: circle-animate;
-    transform-origin: center center;
-  }
-}
-
-.button {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 25;
 
   width: 100%;
   height: 100%;
+
+  z-index: 25;
+
+  &__circle {
+    position: absolute;
+    background-color: #fff;
+
+    width: 100%;
+    height: 100%;
+
+    opacity: 0;
+
+    animation-name: show;
+    animation-duration: $duration;
+    animation-delay: 150ms;
+    animation-fill-mode: forwards;
+  }
+
+  &__circle-item {
+    animation-fill-mode: forwards;
+  }
+
+  &__circle-item_inside {
+    animation: hideshow 1.3s;
+    animation-delay: 1.5s;
+  }
+
+  &__circle-item_outside {
+    animation: hideshow 1.5s;
+    animation-delay: 1.5s;
+  }
+
+  &__titles {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    animation-name: hide-titles;
+    animation-duration: $duration;
+    animation-delay: 1.9s;
+    animation-fill-mode: forwards;
+  }
+
+  &__title {
+    line-height: 1.1;
+    font-size: 10vw;
+    opacity: 0;
+    animation-name: animate-title;
+    animation-fill-mode: forwards;
+
+    &_one {
+      padding-left: 3vw;
+
+      animation-duration: $duration;
+      animation-delay: $duration;
+    }
+
+    &_two {
+      padding-left: 8vw;
+
+      animation-duration: $duration;
+      animation-delay: calc(#{$duration} * 2);
+    }
+
+    &_three {
+      margin-left: -4vw;
+
+      animation-duration: $duration;
+      animation-delay: calc(#{$duration} * 3);
+    }
+
+    @media #{$phone-width} {
+      font-size: 12vw;
+    }
+  }
 }
 
-.animate-promo__circle-item {
-  animation: hideshow 2s;
-  animation-fill-mode: forwards;
-  animation-delay: 1s;
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes hide-titles {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes animate-title {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes hideshow {
@@ -40,6 +124,6 @@
   }
 
   to {
-    stroke-width: 2%;
+    stroke-width: 1%;
   }
 }

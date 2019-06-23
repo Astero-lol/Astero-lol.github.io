@@ -42,5 +42,11 @@
       display: block;
       text-align: center;
     }
+
+    transition: color $duration;
+
+    &:hover {
+      color: $orange;
+    }
   }
 }
