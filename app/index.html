@@ -15,6 +15,23 @@
 		<header class="header">
 			<section class="section header__section">
 				<a href="/" class="logo"></a>
+				<div class="animate-promo">
+<!--					<svg class="animate-promo__circle" expanded="true" height="60px" width="60px">-->
+<!--						<circle cx="50%" cy="50%" r="35%" stroke="red" stroke-width="10%" fill="none"/>-->
+<!--						<circle cx="50%" cy="50%" r="20%" stroke="red" stroke-width="10%" fill="none"/>-->
+<!--					</svg>-->
+				</div>
+				<svg class = "button" >
+					<circle class='animate-promo__circle-item animate-promo__circle-item_inside' r="26%" stroke="#57AE79" stroke-width="10%" fill="none">
+						<animate attributeName="r" begin="1s" dur="1.6" repeatCount="1" from="26%" to="0"/>
+					</circle>
+					<circle class='animate-promo__circle-item animate-promo__circle-item_outside' r="40%" stroke="#57AE79" stroke-width="10%" fill="none">
+						<animate attributeName="r" begin="1s" dur="1.6s" animationFillMode="forwards" repeatCount="1" from="50%" to="0"/>
+					</circle>
+<!--					<circle class = "innerCircle" cx = "50%" cy = "50%" r = "25%" fill = "red" stroke-width="10%">-->
+<!--						<animate attributeName="line" begin="0s" dur="10s" repeatCount="indefinite" from="10%" to="0"/>-->
+<!--					</circle>-->
+				</svg>
 				<nav class="header-nav">
 					<div class="header-nav__icon">
 						<div class="header-nav__icon-item">
